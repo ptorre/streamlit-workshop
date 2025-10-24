@@ -38,5 +38,5 @@ with map_tab:
     )
     st.plotly_chart(fig)
 with table_tab:
-    # All data for cmopleteness
+    # All data for completeness
     st.dataframe(df)
