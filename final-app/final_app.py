@@ -1,7 +1,7 @@
 import streamlit as st
 import backend as be
 
-st.title("Hello world!")
+st.title("US State Demographics")
 
 col1, col2, col3 = st.columns(3)
 with col1:
