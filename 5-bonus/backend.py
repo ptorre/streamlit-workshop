@@ -18,7 +18,10 @@ def get_data_wide(demographic):
         .pivot(columns="Year", index=["State", "State Abbrev"], values=demographic)
         .reset_index()
     )
+    # Having a "Name" for the columns (in this case "Year") isn't helpful.
     df.columns.name = None
+    # Without this, the columns are of mixed type, which can be confusing. "State" is obviously a string.
+    # But 2005 is an integer. Convert it to a string ("2005")
     df.columns = df.columns.map(str)
     return df
 
