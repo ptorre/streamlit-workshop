@@ -1,0 +1,6 @@
+Slide 13: Series Methods. 5 minutes
+Slide 17: input_app.py. Make input show label and options for states. 10 minutes.
+Slide 25: Boolean indexing. Make input actually subset df. 10 minutes
+----
+
+Total: 25 minutes alloted for exercises
