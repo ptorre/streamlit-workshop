@@ -1,0 +1,10 @@
+Slide 13: Clone repo. 5 minutes
+Slide 17: Install uv. 5 minutes 
+Slide 20: uv sync. 3 minutes
+Slides 22-3: activate and test virtual environment. 3 minutes.
+Slide 25: Run streamlit app. 3 minutes.
+Slide 31: Rerun app. 5 minutes.
+Silde 35: Jupyter notebook. 5 minutes.
+----
+
+Total: 29 minutes alloted for exercises
