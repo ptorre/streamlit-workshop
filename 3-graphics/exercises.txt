@@ -1,0 +1,9 @@
+Slide 2: What graphics do you want to have in your app? 2 minutes.
+Slide 10: Update graph_app.py to have a line graph of the selected state. 5 minutes.
+Slide 12: Select and graph a demographic. 10 minutes.
+Slide 15: Copilot choroplth code. 3 minutes.
+Slide 17: Adding Choropleth map to app. 10 minutes.
+----
+
+Total: 30 minutes of exercises
+
