@@ -1,5 +1,6 @@
-Slide 31: Rerun app. 5 minutes.
-Silde 35: Jupyter notebook. 5 minutes.
+Slide 3: What is a data app? 2 minutes
+Slide 16: Rerun app. 5 minutes.
+Silde 20: Jupyter notebook. 5 minutes.
 ----
 
-Total: 10 minutes alloted for exercises
+Total: 12 minutes alloted for exercises
