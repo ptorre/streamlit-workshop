@@ -7,8 +7,8 @@ Completing this setup before the workshop ensures we can dive straight into codi
 - **Git:** https://git-scm.com/downloads  
 - **uv (package manager):** https://docs.astral.sh/uv/getting-started/installation/  
   Used to manage project dependencies and ensure consistent Python versions. After installing `uv`, restart the terminal.
-- **A code editor/IDE:** For example, VS Code: https://code.visualstudio.com/download  
-- **A way to work with Jupyter Notebooks:** For example, the Jupyter extension for VS Code: https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+- **A code editor/IDE:** I recommend VS Code: https://code.visualstudio.com/download  
+- **A way to work with Jupyter Notebooks:** I recommend the Jupyter extension for VS Code: https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 
 ## Step 1: Clone the course repo
 
@@ -45,7 +45,7 @@ Verify:
 
 Run:  
 ```sh
-cd 1-intro-setup
+cd 1-intro
 streamlit run streamlit_app.py
 ```
 
@@ -55,7 +55,7 @@ Stop the app (Ctrl+C in the terminal) before continuing.
 
 ## Step 5: Verify Jupyter notebooks
 
-Open `1-intro-setup/review.ipynb`.
+Open `1-intro/review.ipynb`.
 
 Then:  
 - Select the **kernel** for this project’s virtual environment (usually labeled `.venv`).  
