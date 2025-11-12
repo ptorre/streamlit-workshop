@@ -1,7 +1,6 @@
 # streamlit-workshop
 
-⚠️ **Important:** Before the workshop begins, please complete the setup steps in [SETUP.md](SETUP.md).  
-Doing this ahead of time ensures you’ll be ready to dive straight into coding without delays.
+⚠️ **Important:** Before the workshop begins, please complete the setup steps in [SETUP.md](SETUP.md). Doing this ahead of time ensures you’ll be ready to dive straight into coding without delays.
 
 Code and slides for an introductory Streamlit workshop, designed to run over two 3-hour sessions. The course is split into four modules and includes hands-on exercises and tips for using large language models (LLMs) to support development.
 
