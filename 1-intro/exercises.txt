@@ -3,14 +3,8 @@ Slide 14: Quiz about app (min/max values). 2 minutes.
 Slide 16: Rerun app. 5 minutes.
 Silde 20: Jupyter notebook. 5 minutes.
 ----
-
 Total: 14 minutes alloted for exercises
 
 With 21 total slides - 4 exercise slides = 17 slides.
-@ 1-2 minutes / slide = 17-34 minutes.
 
-Estimated time for slides + exercises = 31-48 minutes.
-
-Always a chance people will need help with setup 
-which might increase it, but this seems like a good
-starting point.
+Estimated time for slides (@ 1 min / slide) + exercises = 31 minutes.
