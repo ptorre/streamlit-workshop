@@ -23,7 +23,7 @@ While not required, familiarity with the following will make the workshop smooth
 Each of these topics will be covered thoroughly in the workshop, so don’t worry if they’re new to you.
 
 ## 📊 Course Overview
-This course walks learners through the full lifecycle of building a Streamlit app—from setup to deployment—using U.S. Census data as a case study. It introduces Streamlit as a tool for building apps that support exploratory data analysis. The skills taught are broadly applicable to any dataset, making this a versatile foundation for data scientists, data journalists, and beyond.
+This course walks learners through the full lifecycle of building a Streamlit app—from setup to deployment—using U.S. Census data as a case study. It presents Streamlit as a tool for building apps that enable exploratory data analysis. The skills taught are broadly applicable to any dataset, making this a practical starting point for any professional working with data - analysts, scientsts, journalists, and beyond.
 
 ## 🧭 Module Breakdown
 
