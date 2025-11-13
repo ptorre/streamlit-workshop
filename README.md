@@ -2,7 +2,7 @@
 
 ⚠️ **Important:** Before the workshop begins, please complete the setup steps in [SETUP.md](SETUP.md). Doing this ahead of time ensures you’ll be ready to dive straight into coding without delays.
 
-Code and slides for an introductory Streamlit workshop, designed to run over two 3-hour sessions. The course is split into four modules and includes hands-on exercises and tips for using large language models (LLMs) to support development.
+Code and slides for an introductory Streamlit workshop, designed to take 4 hours. In addition to lectures and exercises on Streamlit, the course includes guidance and practice with large language models (LLMs) to support development.
 
 You can see the app that course participants will develop [here](https://workshop-final-app.streamlit.app/).
 
@@ -10,20 +10,26 @@ You can see the app that course participants will develop [here](https://worksho
 This workshop assumes learners are comfortable with:
   * Navigating the command line
   * Using Git and GitHub
-  * Writing Python code (scripts and Jupyter notebooks)
+  * Writing Python code in scripts and Jupyter notebooks
+  * Creating and activating Python virtual environments
 
-## 📊 Course Overview: Building Interactive Data Apps with Streamlit
-This course walks learners through the full lifecycle of building a Streamlit app—from setup to deployment—using U.S. Census data as a case study. The skills taught are broadly applicable to any dataset, making this a versatile foundation for scientists, data journalists, and beyond.
+No prior experience with advanced data science libraries or web/app development is required.
+
+## 🌟 Recommended Skills
+While not required, familiarity with the following will make the workshop smoother:
+  * Working with Pandas for data analysis
+  * Creating visualizations with Plotly
+
+Each of these topics will be covered thoroughly in the workshop, so don’t worry if they’re new to you.
+
+## 📊 Course Overview
+This course walks learners through the full lifecycle of building a Streamlit app—from setup to deployment—using U.S. Census data as a case study. The course emphasizes Streamlit for building apps that support exploratory data analysis. The skills taught are broadly applicable to any dataset, making this a versatile foundation for data scientists, data journalists, and beyond.
 
 ## 🧭 Module Breakdown
-### 1. Introduction & Setup
-Get oriented with Streamlit and the course structure. This module walks through local setup, introduces the app you'll build, and provides a gentle onboarding path to ensure everyone can follow along—regardless of prior experience.
 
-### 2. Inputs & Graphics
-The heart of the course. Learn how to add interactive widgets (like dropdowns and sliders) and create dynamic visualizations. By the end of this module, you'll be able to build simple apps that let users explore data visually.
-
-### 3. Organizing UI and Code
-Improve user experience with layout tools like columns and tabs, and learn how to split code into separate files for UI and data logic. This module emphasizes clarity, maintainability, and empathy for future collaborators.
-
-### 4. Deployment
-Share your app with the world. This module walks through a secure, beginner-friendly deployment workflow using Streamlit Cloud and GitHub’s web interface.
+1. Introduction
+2. Working with User Input
+3. Creating Interactive Graphics
+4. Organizing the User Interface
+5. Deploying your App
+6. Organizing your Code
