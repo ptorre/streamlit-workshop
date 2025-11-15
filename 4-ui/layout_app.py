@@ -30,6 +30,7 @@ fig = px.choropleth(
     color=demographic,  # Column for color
     scope="usa",
     title=f"{demographic} for {year}",
+    color_continuous_scale="viridis",
 )
 st.plotly_chart(fig)
 
