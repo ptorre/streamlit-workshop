@@ -12,6 +12,7 @@ Total: 37 minutes alloted for exercises
 
 Estimated time for slides (@ 1 min / slide) + exercises = 58 minutes.
 
-Intro has an estimate of 31 minutes so total at this point is 58+31 is 1:29. 
-So plan to take a 10 minute break after this, which would bring it to 1:39 minutes.
-(~40% of the workshop will be done at this point.)
+Intro: 31 minutes
+Input: 58 minutes
+----
+Total: 89 minutes = 1:29 (~37% of course)
