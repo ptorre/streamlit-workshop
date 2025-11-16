@@ -1,0 +1,24 @@
+Slide 2: Deployment? 2 minutes.
+Slide 7: Create new Github repo. 5 minutes
+Slide 8: Upload files to Github repo. 10 minutes
+Slide : Create Streamlit Cloud account. 5 minutes 
+Slide : Deploy app: 10 minutres.
+Slide: Edit app & trigger redeployment: 5 minutes.
+Slide : What is a data app? 2 minutes
+----
+
+Total: 39
+
+25 slides - 7 for exericses =  18 slides.
+
+Estimated time for slides (@ 1 min / slide) + exercises = 39 + 18 = 57.
+
+Intro: 31 minutes
+Input: 58 minutes
+Graphics: 58 minutes
+UI: 51
+Deployment: 57
+----
+Total: 255 minutes = (106%)
+
+Plus time for breaks?
