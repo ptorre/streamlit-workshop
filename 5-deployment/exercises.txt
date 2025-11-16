@@ -1,24 +1,29 @@
 Slide 2: Deployment? 2 minutes.
 Slide 7: Create new Github repo. 5 minutes
 Slide 8: Upload files to Github repo. 10 minutes
-Slide : Create Streamlit Cloud account. 5 minutes 
-Slide : Deploy app: 10 minutres.
-Slide: Edit app & trigger redeployment: 5 minutes.
-Slide : What is a data app? 2 minutes
+Slide 10: Create Streamlit Cloud account. 5 minutes 
+Slide 11: Deploy app: 10 minutres.
+Slide 21: What is a data app? 2 minutes
 ----
 
-Total: 39
-
-25 slides - 7 for exericses =  18 slides.
-
-Estimated time for slides (@ 1 min / slide) + exercises = 39 + 18 = 57.
+Total: 34 minutes for exercises
+21 slides - 7 for exericses =  15 slides.
+Estimated time for slides (@ 1 min / slide) + exercises = 34 + 15 = 49.
 
 Intro: 31 minutes
 Input: 58 minutes
 Graphics: 58 minutes
 UI: 51
-Deployment: 57
+Deployment: 49
 ----
-Total: 255 minutes = (106%)
+Total: 247 minutes = (103%)
 
-Plus time for breaks?
+This does not include time for breaks. So you're over. But that's probably 
+fine, as e.g. the last section of this module ("Notes about the deployed app", 
+which is 7 slides) can be skipped, as can the final exercise. As can the first 
+exercise. 
+
+It mostly means:
+	 * target starting this module 45 minutes before the end of the course, 
+	   and plan to skip parts of it as needed.	 
+	 * you are unlikely to get to the bonus module on organizing code.
