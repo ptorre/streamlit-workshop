@@ -8,11 +8,11 @@ Slide 25: Copilot & Input Widgets. 10 minutes
 
 Total: 37 minutes alloted for exercises
 
-26 slides - 5 for slides = 21 slides.
+25 slides - 5 for slides = 20 slides.
 
-Estimated time for slides (@ 1 min / slide) + exercises = 58 minutes.
+Estimated time for slides (@ 1 min / slide) + exercises = 57 minutes.
 
 Intro: 31 minutes
-Input: 58 minutes
+Input: 57 minutes
 ----
-Total: 89 minutes = 1:29 (~37% of course)
+Total: 88 minutes = 1:28 (~37% of course)
