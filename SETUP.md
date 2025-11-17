@@ -61,7 +61,7 @@ Open `1-intro/review.ipynb`.
   Then select the **kernel** for this project’s virtual environment (usually labeled `.venv`), run the first cell, and confirm it executes without errors.
 
 - **Alternative (if not using VS Code):**  
-  In the terminal, change into the `1-intro` directory and run:
+  Make sure you're in the `1-intro` directory, then run:
   ```sh
   uv run jupyter notebook review.ipynb
   ```
