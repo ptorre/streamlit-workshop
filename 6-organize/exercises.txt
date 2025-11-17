@@ -1,0 +1,19 @@
+Slide 6: Using backend.py in a Notebook. 10 minutes.
+Slide 10: Using backend.py in an App. 10 minutes. 
+
+------
+
+Total: 20 minutes for exercises
+12 slides - 2 for exericses =  18 slides.
+Estimated time for slides (@ 1 min / slide) + exercises = 18 + 20 = 38.
+
+Intro: 31 minutes
+Input: 58 minutes
+Graphics: 58 minutes
+UI: 51
+Deployment: 49
+Organization: 38
+----
+Total: 285 minutes = (119% - 45 minutes over)
+
+This also ignores breaks. So it seems impossible that I'll get to cover this.
