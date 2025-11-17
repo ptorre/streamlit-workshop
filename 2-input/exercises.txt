@@ -1,18 +1,16 @@
-Slide 2: What user input? 2 minutes.
-Slide 11: Series Methods. 5 minutes
-# Slides 13-14: Learning about select boxes with Google & Copilot: 2 minutes.
-Slide 17: input_app.py. Make input show label and options for states. 10 minutes.
-Slide 23: Boolean indexing. Make input actually subset df. 10 minutes
-Slide 25: Copilot & Input Widgets. 10 minutes
+Slide 10: Series Methods. 5 minutes
+Slide 13: input_app.py. Make input show label and options for states. 10 minutes.
+Slide 21: Boolean indexing. Make input actually subset df. 10 minutes
+Slide 23: Copilot & Input Widgets. 10 minutes
 ----
 
-Total: 37 minutes alloted for exercises
+Total: 35 minutes alloted for exercises
 
-25 slides - 5 for slides = 20 slides.
+24 slides - 4 for slides = 20 slides.
 
-Estimated time for slides (@ 1 min / slide) + exercises = 57 minutes.
+Estimated time for slides (@ 1 min / slide) + exercises = 55 minutes.
 
 Intro: 31 minutes
-Input: 57 minutes
+Input: 55 minutes
 ----
-Total: 88 minutes = 1:28 (~37% of course)
+Total: 86 minutes = 1:26 (~36% of course)

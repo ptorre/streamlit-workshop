@@ -1,19 +1,18 @@
-Slide 2: What graphics do you want to have in your app? 2 minutes.
-Slide 10: Update graph_app.py to have a line graph of the selected state. 10 minutes.
-Slide 14: Select and graph a demographic. 10 minutes.
+Slide 9: Update graph_app.py to have a line graph of the selected state. 10 minutes.
+Slide 13: Select and graph a demographic. 10 minutes.
 Slide 17: Add Choropleth map to app. 10 minutes.
-Slide 20: Copilot & Graphics. 10 minutes.
+Slide 19: Copilot & Graphics. 10 minutes.
 ----
 
-Total: 42 minutes alloted for exercises
+Total: 40 minutes alloted for exercises
 
-21 slides - 5 for slides = 16 slides.
+20 slides - 5 for exercises = 15 slides.
 
-Estimated time for slides (@ 1 min / slide) + exercises =  58 minutes.
+Estimated time for slides (@ 1 min / slide) + exercises =  55 minutes.
 
 Intro: 31 minutes
-Input: 58 minutes
-Graphics: 58 minutes
+Input: 55 minutes
+Graphics: 55 minutes
 ----
-Total: 147 minutes = 2:27 (~60%)
+Total: 141 minutes = 2:27 (~59%)
 
