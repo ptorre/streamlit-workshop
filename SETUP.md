@@ -57,9 +57,14 @@ Stop the app (Ctrl+C in the terminal) before continuing.
 
 Open `1-intro/review.ipynb`.
 
-Then:  
-- Select the **kernel** for this project’s virtual environment (usually labeled `.venv`).  
-- Run a cell and confirm it executes without errors.
+- **Recommended:** If you’re using VS Code, install the [Jupyter extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).  
+  Then select the **kernel** for this project’s virtual environment (usually labeled `.venv`), run the first cell, and confirm it executes without errors.
+
+- **Alternative (if not using VS Code):**  
+  In the terminal, change into the `1-intro` directory and run:
+  ```sh
+  uv run jupyter notebook review.ipynb
+  ```
 
 ## Final check
 

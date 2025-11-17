@@ -2,7 +2,8 @@
 
 ⚠️ **Important:** Before the workshop begins, please complete the setup steps in [SETUP.md](SETUP.md). Doing this ahead of time ensures you’ll be ready to dive straight into coding without delays.
 
-Code and slides for an introductory Streamlit workshop, designed to take 4 hours. In addition to lectures and exercises on Streamlit, the course includes guidance and practice with large language models (LLMs) to support development.
+## 📊 Course Overview
+This 4-hour course walks learners through the full lifecycle of building a data app in Python using Streamlit and Copilot. It presents Streamlit as a tool for building interactive apps that support exploratory analysis. The skills taught are broadly applicable to any dataset—making this a practical starting point for professionals working with data: analysts, scientists, journalists, and beyond.
 
 You can see the app that course participants will develop [here](https://workshop-final-app.streamlit.app/).
 
@@ -21,9 +22,6 @@ While not required, familiarity with the following will make the workshop smooth
   * Creating visualizations with Plotly
 
 Each of these topics will be covered thoroughly in the workshop, so don’t worry if they’re new to you.
-
-## 📊 Course Overview
-This course walks learners through the full lifecycle of building a Streamlit app—from setup to deployment—using U.S. Census data as a case study. It presents Streamlit as a tool for building apps that enable exploratory data analysis. The skills taught are broadly applicable to any dataset, making this a practical starting point for any professional working with data - analysts, scientsts, journalists, and beyond.
 
 ## 🧭 Module Breakdown
 
