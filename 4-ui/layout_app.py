@@ -34,5 +34,5 @@ fig = px.choropleth(
 )
 st.plotly_chart(fig)
 
-# All data for cmopleteness
+# All data for completeness
 st.dataframe(df)

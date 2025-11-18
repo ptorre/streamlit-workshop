@@ -1,18 +1,17 @@
-Slide 2: UI Design? 2 minutes.
-Slide 12: Add columns. 10 minutes.
-Slide 14: Add tabs. 10 minutes.
-Slide 22: Copilot & UI. 10 minutes.
+Slide 11: Add columns. 10 minutes.
+Slide 19: Add tabs. 10 minutes.
+Slide 21: Copilot UI Refactor. 10 minutes.
 ----
 
-Total: 32 minutes alloted for exercises
+Total: 30 minutes alloted for exercises
 
-23 slides - 4 for slides = 19 slides.
+22 slides - 3 for exercises = 19 slides.
 
-Estimated time for slides (@ 1 min / slide) + exercises = 19 + 32 = 51.
+Estimated time for slides (@ 1 min / slide) + exercises = 19 + 30 = 49.
 
 Intro: 31 minutes
-Input: 58 minutes
-Graphics: 58 minutes
-UI: 51
+Input: 55 minutes
+Graphics: 55 minutes
+UI: 49
 ----
-Total: 198 minutes = 3:18 (~83%)
+Total: 190 minutes = 3:10 (79%)
