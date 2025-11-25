@@ -30,4 +30,3 @@ Each of these topics will be covered thoroughly in the workshop, so don’t worr
 3. Creating Interactive Graphics
 4. Organizing the User Interface
 5. Deploying your App
-6. Organizing your Code
