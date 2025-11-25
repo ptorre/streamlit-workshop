@@ -4,6 +4,8 @@ Completing this setup before the workshop ensures we can dive straight into codi
 
 ## Prerequisites
 
+Start by making sure you have the following software installed:
+
 - **Git:** https://git-scm.com/downloads  
 - **uv (package manager):** https://docs.astral.sh/uv/getting-started/installation/  
   Used to manage project dependencies and ensure consistent Python versions. After installing `uv`, restart the terminal.
