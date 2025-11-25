@@ -70,10 +70,6 @@ Open `1-intro/review.ipynb`.
 
 ## Final check
 
-If you:  
-- cloned the repo,  
-- created and activated the environment,  
-- launched the Streamlit demo,  
-- and ran the `review.ipynb` notebook,  
+If you cloned the repo, created and activated the environment, launched the Streamlit demo app, and ran the review.ipynb notebook, you’re ready for the workshop 🎉
 
-🎉 You’re ready for the workshop. If you hit issues, reach out on the support channel before the event with screenshots and your OS/shell details.
+If you hit issues, reach out on the support channel before the event with screenshots and your OS/shell details.
