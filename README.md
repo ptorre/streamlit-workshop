@@ -16,15 +16,6 @@ This workshop assumes learners are comfortable with:
   * Writing Python code in scripts and Jupyter notebooks
   * Creating and activating Python virtual environments
 
-No prior experience with advanced data science libraries or web/app development is required.
-
-## 🌟 Recommended Skills
-While not required, familiarity with the following will make the workshop smoother:
-  * Working with Pandas for data analysis
-  * Creating visualizations with Plotly
-
-Each of these topics will be covered thoroughly in the workshop, so don’t worry if they’re new to you.
-
 ## 🧭 Module Breakdown
 
 1. Introduction
@@ -32,3 +23,14 @@ Each of these topics will be covered thoroughly in the workshop, so don’t worr
 3. Creating Interactive Graphics
 4. Organizing the User Interface
 5. Deploying your App
+
+## ❓ FAQ
+
+**Do I need to know Pandas or Plotly beforehand?**  
+No. We’ll review essentials like filtering dataframes in Pandas and creating visualizations with Plotly during the workshop. Prior familiarity may help you move faster, but it’s not required.
+
+**Do I need prior experience with advanced data science or web development?**  
+No. As long as you’re comfortable with Python basics, Jupyter Notebooks, and the command line, you’ll be fine.
+
+**What will I walk away with?**  
+A working Streamlit app you can share with colleagues or include in your portfolio.
