@@ -10,3 +10,6 @@ wheels/
 .venv
 
 .ipynb_checkpoints
+
+Notes-for-next-version.txt
+all-slides-combined/*

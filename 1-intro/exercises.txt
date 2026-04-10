@@ -1,10 +1,9 @@
-Slide 3: What is a data app? 2 minutes
-Slide 14: Quiz about app (min/max values). 2 minutes.
-Slide 16: Rerun app. 5 minutes.
-Silde 20: Jupyter notebook. 5 minutes.
+Slide 2: Demo app. 3 minutes
+Slide 3: Setup. 10 minutes
+Slide 11: Rerun app. 3 minutes.
 ----
-Total: 14 minutes alloted for exercises
+Total: 13 exercises + 3 demo = 16
 
-With 21 total slides - 4 exercise slides = 17 slides.
+With 16 total slides - 3 exercise slides = 13 slides.
 
-Estimated time for slides (@ 1 min / slide) + exercises = 31 minutes (13% of course)
+Estimated time for slides (@ 1 min / slide) + exercises = 29 minutes (12% of course)

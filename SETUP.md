@@ -65,7 +65,7 @@ Open `1-intro/review.ipynb`.
 - **Alternative (if not using VS Code):**  
   Make sure you're in the `1-intro` directory, then run:
   ```sh
-  uv run jupyter notebook review.ipynb
+jupyter notebook review.ipynb
   ```
 
 ## Final check
