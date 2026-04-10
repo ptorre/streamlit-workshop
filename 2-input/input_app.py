@@ -12,4 +12,7 @@ option = st.selectbox("Select your favorite fruit:", ["Apple", "Banana", "Cherry
 
 st.write("You selected:", option)
 
+# Filter df to just the values the user selected
+# df = ...
+
 st.dataframe(df)
