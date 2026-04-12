@@ -1,9 +1,0 @@
-Slide 2: Demo app. 3 minutes
-Slide 3: Setup. 10 minutes
-Slide 11: Rerun app. 3 minutes.
-----
-Total: 13 exercises + 3 demo = 16
-
-With 16 total slides - 3 exercise slides = 13 slides.
-
-Estimated time for slides (@ 1 min / slide) + exercises = 29 minutes (12% of course)
