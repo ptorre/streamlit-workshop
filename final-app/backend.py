@@ -3,6 +3,10 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import numpy as np
 
 import pandas as pd
 import plotly.express as px
@@ -35,12 +39,12 @@ def get_data() -> pd.DataFrame:
     return pd.read_csv(DATA_FILE)
 
 
-def get_unique_states() -> pd.Series:
+def get_unique_states() -> np.ndarray:
     """Return the unique state names from the dataset."""
     return get_data()[COL_STATE].unique()
 
 
-def get_unique_years() -> pd.Series:
+def get_unique_years() -> np.ndarray:
     """Return the unique survey years from the dataset."""
     return get_data()[COL_YEAR].unique()
 
