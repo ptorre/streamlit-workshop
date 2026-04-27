@@ -8,8 +8,6 @@ API via the censusdis package.
 
 from __future__ import annotations
 
-from pathlib import Path
-
 import us
 from censusdis.datasets import ACS1
 from censusdis.multiyear import download_multiyear
@@ -24,7 +22,7 @@ CENSUS_VARS: dict[str, str] = {
 # See https://www.census.gov/programs-surveys/acs/data/experimental-data.html
 YEARS: list[int] = [year for year in range(2005, 2024) if year != 2020]
 
-OUTPUT_PATH = Path("state_data.csv")
+OUTPUT_FILE = "state_data.csv"
 
 
 def get_abbrev(state_name: str) -> str | None:
@@ -49,11 +47,15 @@ def main() -> None:
     new_order = ["State", "Year"] + [col for col in cols if col not in {"State", "Year"}]
     df = df[new_order]
 
+    # Sort values and write to disk
     df = df.sort_values(["State", "Year"])
+
+    # Add state abbreviations, so I can make a choropleth map with px.choropleth
     df["State Abbrev"] = df["State"].apply(get_abbrev)
 
-    df.to_csv(OUTPUT_PATH, index=False)
+    df.to_csv(OUTPUT_FILE, index=False)
 
 
 if __name__ == "__main__":
     main()
+

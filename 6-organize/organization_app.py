@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-import backend as be
 import streamlit as st
+
+import backend as be
 
 DEMOGRAPHICS = ["Total Population", "Median Household Income"]
 
