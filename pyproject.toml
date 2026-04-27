@@ -1,9 +1,9 @@
 [project]
 name = "streamlit-workshop"
 version = "0.1.0"
-description = "Add your description here"
+description = "Streamlit workshop demo app using US Census demographic data"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "censusdis>=1.4.2",
     "ipykernel>=6.30.1",
@@ -17,7 +17,14 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "black[jupyter]>=25.1.0",
     "flake8>=7.3.0",
     "ruff>=0.13.0",
 ]
+
+[tool.ruff]
+line-length = 120
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "ANN", "B"]
+ignore = ["ANN401"]

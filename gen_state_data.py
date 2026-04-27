@@ -6,11 +6,15 @@ Data comes from the American Community Survey 1-year Estimates, and is retrieved
 API via the censusdis package.
 """
 
+from __future__ import annotations
+
+from pathlib import Path
+
+import us
 from censusdis.datasets import ACS1
 from censusdis.multiyear import download_multiyear
-import us
 
-census_vars = {
+CENSUS_VARS: dict[str, str] = {
     "NAME": "State",
     "B01001_001E": "Total Population",
     "B19013_001E": "Median Household Income",
@@ -18,32 +22,38 @@ census_vars = {
 
 # Note that data was not published in 2020 due to Covid-19.
 # See https://www.census.gov/programs-surveys/acs/data/experimental-data.html
-years = [year for year in range(2005, 2024) if year != 2020]
-df = download_multiyear(
-    dataset=ACS1,
-    vintages=years,
-    download_variables=census_vars.keys(),
-    state="*",
-    rename_vars=False,
-    prompt=False,
-)
-df = df.rename(columns=census_vars)
+YEARS: list[int] = [year for year in range(2005, 2024) if year != 2020]
 
-# Reorder columns
-cols = df.columns.tolist()
-new_order = ["State", "Year"] + [col for col in cols if col not in ["State", "Year"]]
-df = df[new_order]
-
-# Sort values and write to disk
-df = df.sort_values(["State", "Year"])
+OUTPUT_PATH = Path("state_data.csv")
 
 
-# Add state abbreviations, so I can make a choropleth map with px.choropleth
-def get_abbrev(state_name):
+def get_abbrev(state_name: str) -> str | None:
+    """Return the two-letter abbreviation for *state_name*, or None for territories."""
     match = us.states.lookup(state_name)
     return match.abbr if match else None  # Happens for Puerto Rico
 
 
-df["State Abbrev"] = df["State"].apply(get_abbrev)
+def main() -> None:
+    df = download_multiyear(
+        dataset=ACS1,
+        vintages=YEARS,
+        download_variables=CENSUS_VARS.keys(),
+        state="*",
+        rename_vars=False,
+        prompt=False,
+    )
+    df = df.rename(columns=CENSUS_VARS)
 
-df.to_csv("state_data.csv", index=False)
+    # Reorder columns so State and Year come first
+    cols = df.columns.tolist()
+    new_order = ["State", "Year"] + [col for col in cols if col not in {"State", "Year"}]
+    df = df[new_order]
+
+    df = df.sort_values(["State", "Year"])
+    df["State Abbrev"] = df["State"].apply(get_abbrev)
+
+    df.to_csv(OUTPUT_PATH, index=False)
+
+
+if __name__ == "__main__":
+    main()

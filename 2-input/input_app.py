@@ -1,9 +1,21 @@
-import streamlit as st
+from __future__ import annotations
+
+from pathlib import Path
+
 import pandas as pd
+import streamlit as st
+
+DATA_PATH = Path(__file__).parent.parent / "state_data.csv"
+
+
+@st.cache_data
+def load_data() -> pd.DataFrame:
+    return pd.read_csv(DATA_PATH)
+
 
 st.title("Demo Streamlit App")
 
-df = pd.read_csv("state_data.csv")
+df = load_data()
 
 # Exercise: Change this code to:
 # 1. Ask the user to select a state
@@ -25,9 +37,9 @@ name = st.text_input("Your name", placeholder="Type your name")
 age = st.slider("Age", min_value=0, max_value=100, value=30)
 show_raw_data = st.checkbox("Show raw data", value=False)
 favorite_states = st.multiselect(
-	"Pick one or more favorite states",
-	states,
-	default=states[:3],
+    "Pick one or more favorite states",
+    states,
+    default=states[:3],
 )
 
 st.write("Widget demo output")
@@ -37,4 +49,5 @@ st.write("Show raw data:", show_raw_data)
 st.write("Favorite states:", favorite_states if favorite_states else "(none selected)")
 
 if show_raw_data:
-	st.dataframe(pd.read_csv("state_data.csv"))
+    st.dataframe(load_data())
+
