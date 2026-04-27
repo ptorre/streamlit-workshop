@@ -1,27 +1,37 @@
-import streamlit as st
+"""Organizing the User Interface - Multiple widgets and visualizations.
+
+This module demonstrates how to create a more complex Streamlit app with
+multiple input widgets, line graphs, and choropleth maps.
+"""
+
+from __future__ import annotations
+
+from pathlib import Path
+
 import pandas as pd
 import plotly.express as px
+import streamlit as st
+
+# Constants
+DATA_FILE = Path("state_data.csv")
+DEMOGRAPHICS = ["Total Population", "Median Household Income"]
 
 st.title("Demo Streamlit App")
 
-df = pd.read_csv("state_data.csv")
+df = pd.read_csv(DATA_FILE)
 
 # UI Options
 state = st.selectbox("Select a State:", df["State"].unique())
-demographic = st.selectbox(
-    "Select a Demographic:", ["Total Population", "Median Household Income"]
-)
+demographic = st.selectbox("Select a Demographic:", DEMOGRAPHICS)
 year = st.selectbox("Select a Year:", df["Year"].unique())
 
 # State line graph
-mask = df["State"] == state
-df_state = df[mask]
+df_state = df[df["State"] == state]
 fig = px.line(df_state, x="Year", y=demographic, title=f"{demographic} for {state}")
 st.plotly_chart(fig)
 
 # Map for year
-mask = df["Year"] == year
-df_year = df[mask]
+df_year = df[df["Year"] == year]
 
 fig = px.choropleth(
     df_year,
