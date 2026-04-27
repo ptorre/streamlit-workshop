@@ -1,49 +1,81 @@
-"""
-This script generates the dataset which is used by the app. The final structure of the data looks like:
-(State, Year, Total Population, Median Household Income, State Abbrev)
+"""Generate the state-level demographics CSV used by the app.
 
-Data comes from the American Community Survey 1-year Estimates, and is retrieved from the US Census Bureau's
-API via the censusdis package.
+Output schema: State | Year | Total Population | Median Household Income | State Abbrev
+
+Data comes from the American Community Survey 1-year Estimates, retrieved from the
+US Census Bureau's API via the *censusdis* package.
 """
 
+from __future__ import annotations
+
+from pathlib import Path
+
+import us
 from censusdis.datasets import ACS1
 from censusdis.multiyear import download_multiyear
-import us
 
-census_vars = {
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+OUTPUT_FILE = Path(__file__).parent / "state_data.csv"
+
+CENSUS_VARS: dict[str, str] = {
     "NAME": "State",
     "B01001_001E": "Total Population",
     "B19013_001E": "Median Household Income",
 }
 
-# Note that data was not published in 2020 due to Covid-19.
+# Data was not published in 2020 due to Covid-19.
 # See https://www.census.gov/programs-surveys/acs/data/experimental-data.html
-years = [year for year in range(2005, 2024) if year != 2020]
-df = download_multiyear(
-    dataset=ACS1,
-    vintages=years,
-    download_variables=census_vars.keys(),
-    state="*",
-    rename_vars=False,
-    prompt=False,
-)
-df = df.rename(columns=census_vars)
+YEARS: list[int] = [year for year in range(2005, 2024) if year != 2020]
 
-# Reorder columns
-cols = df.columns.tolist()
-new_order = ["State", "Year"] + [col for col in cols if col not in ["State", "Year"]]
-df = df[new_order]
-
-# Sort values and write to disk
-df = df.sort_values(["State", "Year"])
+# ---------------------------------------------------------------------------
+# Helpers
+# ---------------------------------------------------------------------------
 
 
-# Add state abbreviations, so I can make a choropleth map with px.choropleth
-def get_abbrev(state_name):
-    match = us.states.lookup(state_name)
-    return match.abbr if match else None  # Happens for Puerto Rico
+def get_state_abbrev(state_name: str) -> str | None:
+    """Return the two-letter postal abbreviation for *state_name*.
+
+    Returns ``None`` for territories such as Puerto Rico that lack an
+    abbreviation in the *us* package.
+    """
+    match us.states.lookup(state_name):
+        case None:
+            return None
+        case state:
+            return state.abbr
 
 
-df["State Abbrev"] = df["State"].apply(get_abbrev)
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
 
-df.to_csv("state_data.csv", index=False)
+
+def main() -> None:
+    df = download_multiyear(
+        dataset=ACS1,
+        vintages=YEARS,
+        download_variables=list(CENSUS_VARS),
+        state="*",
+        rename_vars=False,
+        prompt=False,
+    )
+    df = df.rename(columns=CENSUS_VARS)
+
+    # Reorder columns so State and Year come first.
+    leading = ["State", "Year"]
+    remaining = [col for col in df.columns if col not in leading]
+    df = df[leading + remaining]
+
+    df = df.sort_values(["State", "Year"])
+    df["State Abbrev"] = df["State"].apply(get_state_abbrev)
+
+    df.to_csv(OUTPUT_FILE, index=False)
+    print(f"Wrote {len(df):,} rows to {OUTPUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()
+

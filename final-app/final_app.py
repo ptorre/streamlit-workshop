@@ -1,25 +1,37 @@
+"""Final Streamlit app – US State Demographics explorer."""
+
+from __future__ import annotations
+
 import streamlit as st
+
 import backend as be
 
 st.title("US State Demographics")
 
+# ---------------------------------------------------------------------------
+# Sidebar / control widgets
+# ---------------------------------------------------------------------------
+
 col1, col2, col3 = st.columns(3)
 with col1:
-    state = st.selectbox("State:", be.get_unique_states())
+    state: str = st.selectbox("State:", be.get_unique_states())
 with col2:
-    demographic = st.selectbox(
-        "Demographic:", ["Total Population", "Median Household Income"]
-    )
+    demographic: str = st.selectbox("Demographic:", be.DEMOGRAPHICS)
 with col3:
-    year = st.selectbox("Year:", be.get_unique_years())
+    year: int = st.selectbox("Year:", be.get_unique_years())
+
+# ---------------------------------------------------------------------------
+# Content tabs
+# ---------------------------------------------------------------------------
 
 graph_tab, map_tab, table_tab = st.tabs(["📈 Graph", "🗺️ Map", "📊 Table"])
+
 with graph_tab:
-    fig = be.get_line_graph(state, demographic)
-    st.plotly_chart(fig)
+    st.plotly_chart(be.get_line_graph(state, demographic))
+
 with map_tab:
-    fig = be.get_map(demographic, year)
-    st.plotly_chart(fig)
+    st.plotly_chart(be.get_map(demographic, year))
+
 with table_tab:
-    df = be.get_data()
-    st.dataframe(df)
+    st.dataframe(be.get_data())
+

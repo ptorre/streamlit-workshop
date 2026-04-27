@@ -1,14 +1,18 @@
-import streamlit as st
+"""Graphics exercise – add a line chart filtered by the selected state."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
 import pandas as pd
-import plotly.express as px
+import streamlit as st
 
 st.title("Demo Streamlit App")
 
-df = pd.read_csv("state_data.csv")
+df = pd.read_csv(Path(__file__).parent / "state_data.csv")
 
-state = st.selectbox("Select a State:", df["State"].unique())
+state: str = st.selectbox("Select a State:", df["State"].unique())
 
-mask = df["State"] == state
-df_state = df[mask]
+df_state = df[df["State"] == state]
 
 st.dataframe(df_state)
